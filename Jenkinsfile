@@ -1,4 +1,9 @@
+
 pipeline {
+    node {
+        currentBuild.displayName = "displayNameJenkinsFile"
+        currentBuild.description = "discriptionJenkinsFile"
+    }
     agent any
     triggers {
         cron('*/1 * * * *')
